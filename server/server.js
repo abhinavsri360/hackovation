@@ -26,14 +26,14 @@ app.post('/signup',(req,res)=>{
 	var ph=req.body.phone;
 	var choice=req.body.radiob;
 	//feed to mongo
-	res.send(req.body);
+	res.sendFile(path.join(publicpath,'/patient.html'));
 });
 
 app.post('/login',(req,res)=>{
 	var mail=req.body.mail;
 	var pass=req.body.pass;
 	//check on mongo
-	res.send(req.body);
+	res.sendFile(path.join(publicpath,'/patient.html'));
 });
 
 app.listen(port,()=>

@@ -41,3 +41,17 @@ $('.tab a').on('click', function (e) {
   $(target).fadeIn(600);
 
 });
+
+$(document).ready(function()
+{
+	$("input[name='radiob']").click(function()
+	{
+		var choice=$("input[name='radiob']:checked").val();
+		//console.log(choice);
+		if(choice==0)
+			$('#doc').show();
+		else {
+			$('#doc').hide();
+		}
+	});
+});

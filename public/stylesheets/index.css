@@ -29,7 +29,7 @@ a:hover {
 .form {
   background: rgba(19, 35, 47, 0.9);
   padding: 40px;
-  max-width: 600px;
+  max-width: 650px;
   margin: 40px auto;
   border-radius: 4px;
   box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
@@ -155,24 +155,31 @@ textarea {
   margin-bottom: 40px;
 }
 
-/* line 155, ../sass/index.scss */
+/* line 153, ../sass/index.scss */
+.rightTab {
+  margin-top: 2.5vh;
+  margin-left: 14vw;
+  display: inline-block;
+}
+
+/* line 160, ../sass/index.scss */
 .top-row:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 161, ../sass/index.scss */
+/* line 166, ../sass/index.scss */
 .top-row > div {
   float: left;
   width: 48%;
   margin-right: 4%;
 }
-/* line 165, ../sass/index.scss */
+/* line 170, ../sass/index.scss */
 .top-row > div:last-child {
   margin: 0;
 }
 
-/* line 171, ../sass/index.scss */
+/* line 176, ../sass/index.scss */
 .button {
   border: 0;
   outline: none;
@@ -187,19 +194,24 @@ textarea {
   transition: all 0.5s ease;
   -webkit-appearance: none;
 }
-/* line 184, ../sass/index.scss */
+/* line 189, ../sass/index.scss */
 .button:hover, .button:focus {
   background: #179b77;
 }
 
-/* line 189, ../sass/index.scss */
+/* line 194, ../sass/index.scss */
 .button-block {
   display: block;
   width: 100%;
 }
 
-/* line 194, ../sass/index.scss */
+/* line 199, ../sass/index.scss */
 .forgot {
   margin-top: -20px;
   text-align: right;
+}
+
+/* line 203, ../sass/index.scss */
+.doc {
+  display: none;
 }

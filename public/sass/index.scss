@@ -41,7 +41,7 @@ a {
 .form {
   background:rgba($form-bg,.9);
   padding: 40px;
-  max-width:600px;
+  max-width:650px;
   margin:40px auto;
   border-radius:$br;
   box-shadow:0 4px 10px 4px rgba($form-bg,.3);
@@ -150,6 +150,11 @@ textarea {
   position:relative;
   margin-bottom:40px;
 }
+.rightTab{
+  margin-top:2.5vh;
+  margin-left: 14vw;
+  display:inline-block;
+}
 
 .top-row {
   &:after {
@@ -194,4 +199,7 @@ textarea {
 .forgot {
   margin-top:-20px;
   text-align:right;
+}
+.doc{
+  display: none;
 }
