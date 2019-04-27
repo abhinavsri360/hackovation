@@ -9,6 +9,10 @@ var publicpath=path.join(__dirname,'../public');
 
 app.use(express.static(publicpath));
 
+var bodyParser=require('body-parser');
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+
 app.get('/',(req,res)=>
 {
 	res.sendFile(path.join(publicpath,'/index.html'));
@@ -22,12 +26,14 @@ app.post('/signup',(req,res)=>{
 	var ph=req.body.phone;
 	var choice=req.body.radiob;
 	//feed to mongo
+	res.send(req.body);
 });
 
 app.post('/login',(req,res)=>{
 	var mail=req.body.mail;
 	var pass=req.body.pass;
 	//check on mongo
+	res.send(req.body);
 });
 
 app.listen(port,()=>
