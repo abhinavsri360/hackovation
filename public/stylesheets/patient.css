@@ -1,0 +1,254 @@
+/* line 19, ../sass/patient.scss */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* line 23, ../sass/patient.scss */
+html {
+  overflow-y: scroll;
+}
+
+/* line 27, ../sass/patient.scss */
+body {
+  background: #c1bdba;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+/* line 32, ../sass/patient.scss */
+a {
+  text-decoration: none;
+  color: #1ab188;
+  transition: .5s ease;
+}
+/* line 36, ../sass/patient.scss */
+a:hover {
+  color: #179b77;
+}
+
+/* line 41, ../sass/patient.scss */
+.form {
+  background: rgba(19, 35, 47, 0.9);
+  padding: 40px;
+  max-width: 95%;
+  margin: 40px auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+
+/* line 50, ../sass/patient.scss */
+.tab-group {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+/* line 54, ../sass/patient.scss */
+.tab-group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 60, ../sass/patient.scss */
+.tab-group li a {
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+  margin: auto;
+  background: rgba(160, 179, 176, 0.25);
+  color: #a0b3b0;
+  font-weight: 600;
+  font-size: 1.5em;
+  float: left;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  transition: .5s ease;
+}
+/* line 74, ../sass/patient.scss */
+.tab-group li a:hover {
+  background: #179b77;
+  color: #ffffff;
+}
+/* line 79, ../sass/patient.scss */
+.tab-group .active a {
+  background: #1ab188;
+  color: #ffffff;
+}
+
+/* line 85, ../sass/patient.scss */
+.tab-content > div:last-child {
+  display: none;
+}
+
+/* line 90, ../sass/patient.scss */
+h1 {
+  text-align: center;
+  color: #ffffff;
+  font-weight: 300;
+  margin: 0 0 40px;
+}
+
+/* line 97, ../sass/patient.scss */
+label {
+  position: absolute;
+  transform: translateY(6px);
+  left: 13px;
+  color: rgba(255, 255, 255, 0.5);
+  transition: all 0.25s ease;
+  -webkit-backface-visibility: hidden;
+  pointer-events: none;
+  font-size: 22px;
+}
+/* line 106, ../sass/patient.scss */
+label .req {
+  margin: 2px;
+  color: #1ab188;
+}
+
+/* line 113, ../sass/patient.scss */
+label.active {
+  transform: translateY(50px);
+  left: 2px;
+  font-size: 14px;
+}
+/* line 117, ../sass/patient.scss */
+label.active .req {
+  opacity: 0;
+}
+
+/* line 122, ../sass/patient.scss */
+label.highlight {
+  color: #ffffff;
+}
+
+/* line 126, ../sass/patient.scss */
+input:not([type='radio']), textarea {
+  font-size: 22px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 5px 10px;
+  background: none;
+  background-image: none;
+  border: 1px solid #a0b3b0;
+  color: #ffffff;
+  border-radius: 0;
+  transition: border-color .25s ease, box-shadow .25s ease;
+}
+/* line 138, ../sass/patient.scss */
+input:not([type='radio']):focus, textarea:focus {
+  outline: 0;
+  border-color: #1ab188;
+}
+
+/* line 143, ../sass/patient.scss */
+input[type=radio] {
+  margin: 0.8vw 0vw 0.5vw 25vw;
+}
+
+/* line 146, ../sass/patient.scss */
+textarea {
+  border: 2px solid #a0b3b0;
+  resize: vertical;
+}
+
+/* line 151, ../sass/patient.scss */
+.field-wrap {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+/* line 155, ../sass/patient.scss */
+.rightTab {
+  margin-top: 2.5vh;
+  margin-left: 14vw;
+  display: inline-block;
+}
+
+/* line 162, ../sass/patient.scss */
+.top-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 168, ../sass/patient.scss */
+.top-row > div {
+  float: left;
+  width: 48%;
+  margin-right: 4%;
+}
+/* line 172, ../sass/patient.scss */
+.top-row > div:last-child {
+  margin: 0;
+}
+
+/* line 178, ../sass/patient.scss */
+.button {
+  border: 0;
+  outline: none;
+  border-radius: 99px;
+  padding: 15px 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  background: #1ab188;
+  color: #ffffff;
+  transition: all 0.5s ease;
+  -webkit-appearance: none;
+}
+/* line 193, ../sass/patient.scss */
+.button:hover, .button:focus {
+  background: #179b77;
+}
+
+/* line 198, ../sass/patient.scss */
+.button-block {
+  display: block;
+  width: 100%;
+}
+
+/* line 203, ../sass/patient.scss */
+.forgot {
+  margin-top: -20px;
+  text-align: right;
+}
+
+/* line 208, ../sass/patient.scss */
+.list {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+}
+
+/* line 213, ../sass/patient.scss */
+.ele {
+  border: 1px solid #a0b3b0;
+  width: 95%;
+  padding: 20px 50px 25px 10rem;
+  margin: auto;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  line-height: 1.8em;
+  background: #13232f;
+  font-size: 1.5rem;
+  border-radius: 12px;
+}
+/* line 226, ../sass/patient.scss */
+.ele:hover {
+  box-shadow: 15px 10px 20px rgba(0, 255, 0, 0.19), 0 6px 6px rgba(0, 255, 0, 0.23);
+}
+
+/* line 231, ../sass/patient.scss */
+.labels {
+  width: 45%;
+}
+
+/* line 234, ../sass/patient.scss */
+img {
+  height: 5em;
+  margin: 0px 200px;
+}
